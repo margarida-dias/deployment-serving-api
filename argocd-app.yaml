@@ -7,8 +7,8 @@ spec:
     server: 'https://kubernetes.default.svc'
     namespace: default
   source:
-    repoURL: 'https://github.com/margarida-dias/model-serving-api.git'
-    path: k8s
+    repoURL: 'https://github.com/margarida-dias/deployment-serving-api.git'
+    path: servingapi
     targetRevision: HEAD
   project: default
   syncPolicy:
