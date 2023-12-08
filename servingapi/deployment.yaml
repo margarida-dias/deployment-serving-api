@@ -1,18 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: model-serving-api
+  name: seerving-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: model-serving-api
+      app: serving-api
   template:
     metadata:
       labels:
-        app: model-serving-api
+        app: serving-api
     spec:
       containers:
         - name: serving-api
           image: margaridadias/serving-api:v.3
+        - containerPort: 8080
+
 
