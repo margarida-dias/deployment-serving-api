@@ -18,8 +18,8 @@ spec:
             name: argocd-server
             port:
               name: http
-    host: localhost
+    host: argocd.com
   tls:
   - hosts:
-    - localhost
+    - argocd.com
     secretName: argocd-ingress-http
