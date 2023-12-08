@@ -15,6 +15,5 @@ spec:
       containers:
         - name: serving-api
           image: margaridadias/serving-api:v.3
-        - containerPort: 8080
 
 
